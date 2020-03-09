@@ -1,0 +1,157 @@
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: rgb(23, 21, 56);
+    }
+    
+    .wrap {
+        width: 1100px;
+        margin: 50px auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    
+    .tarjeta-wrap {
+        margin: 10px;
+        -webkit-perspective: 800;
+        perspective: 800;
+    }
+    
+    .tarjeta {
+        width: 300px;
+        height: 350px;
+        background: #F29720;
+        position: relative;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: .7s ease;
+        transition: .7s ease;
+        -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+        box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+        border-radius: 200px;
+        border: 5px double #010846;
+    }
+    
+    .adelante,
+    .atras {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 200px;
+        border: 1px double #010846;
+    }
+    
+    .adelante {
+        width: 100%;
+    }
+    
+    .atras {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        padding: 15px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        font-family: "open sans";
+        background: #F29720;
+    }
+    
+    .tarjeta-wrap:hover .tarjeta {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    
+    .card1 {
+        background-image: url(https://cnnespanol2.files.wordpress.com/2019/12/s_64a163f16ecbb099e52f2f8271f73cbbfcfc9034be4d646f7375e4db1ca6f3d7_1573501883482_ap_19001106049831-1.jpg?quality=100&strip=info&w=940&h=530&crop=1);
+        background-size: cover;
+        border-radius: 200px;
+        border: 1px double #010846;
+    }
+    
+    .card2 {
+        background-image: url(https://cnnespanol2.files.wordpress.com/2019/12/s_64a163f16ecbb099e52f2f8271f73cbbfcfc9034be4d646f7375e4db1ca6f3d7_1573501883482_ap_19001106049831-1.jpg?quality=100&strip=info&w=940&h=530&crop=1);
+        background-size: cover;
+        border-radius: 200px;
+        border: 1px double #010846;
+    }
+    
+    .card3 {
+        background-image: url(https://cnnespanol2.files.wordpress.com/2019/12/s_64a163f16ecbb099e52f2f8271f73cbbfcfc9034be4d646f7375e4db1ca6f3d7_1573501883482_ap_19001106049831-1.jpg?quality=100&strip=info&w=940&h=530&crop=1);
+        background-size: cover;
+        border-radius: 200px;
+        border: 1px double #010846;
+    }
+    
+    .card4 {
+        background-image: url(https://cnnespanol2.files.wordpress.com/2019/12/s_64a163f16ecbb099e52f2f8271f73cbbfcfc9034be4d646f7375e4db1ca6f3d7_1573501883482_ap_19001106049831-1.jpg?quality=100&strip=info&w=940&h=530&crop=1);
+        background-size: cover;
+        border-radius: 200px;
+        border: 1px double #010846;
+    }
+    
+    #form-param {
+        padding: 20px;
+        background-color: #fff;
+        display: flex;
+    }
+    
+    #form-param .container {
+        flex: 2;
+    }
+    
+    #form-param .buttons {
+        flex: 1;
+    }
+    
+    #navs {
+        background-color: #DA4453;
+        background: -webkit-linear-gradient(to top, #89216B, #DA4453);
+        background: linear-gradient(to top, #89216B, #DA4453);
+    }
+    
+    #navLis {
+        background: rgb(226, 226, 226);
+        background: -moz-radial-gradient(center, ellipse cover, rgb(226, 226, 226) 0%, rgb(168, 166, 168) 60%, rgb(168, 166, 168) 62%, rgb(105, 93, 105) 93%, rgb(254, 254, 254) 100%);
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgb(226, 226, 226)), color-stop(60%, rgb(168, 166, 168)), color-stop(62%, rgb(168, 166, 168)), color-stop(93%, rgb(105, 93, 105)), color-stop(100%, rgb(254, 254, 254)));
+        background: -webkit-radial-gradient(center, ellipse cover, rgb(226, 226, 226) 0%, rgb(168, 166, 168) 60%, rgb(168, 166, 168) 62%, rgb(105, 93, 105) 93%, rgb(254, 254, 254) 100%);
+        background: -o-radial-gradient(center, ellipse cover, rgb(226, 226, 226) 0%, rgb(168, 166, 168) 60%, rgb(168, 166, 168) 62%, rgb(105, 93, 105) 93%, rgb(254, 254, 254) 100%);
+        background: -ms-radial-gradient(center, ellipse cover, rgb(226, 226, 226) 0%, rgb(168, 166, 168) 60%, rgb(168, 166, 168) 62%, rgb(105, 93, 105) 93%, rgb(254, 254, 254) 100%);
+        background: radial-gradient(ellipse at center, rgb(226, 226, 226) 0%, rgb(168, 166, 168) 60%, rgb(168, 166, 168) 62%, rgb(105, 93, 105) 93%, rgb(254, 254, 254) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1);
+        border-radius: 20px;
+        border: 1px double #010846;
+    }
+    
+    #nivdivbo {
+        background: #abbaab;
+        background: -webkit-linear-gradient(to bottom, #ffffff, #abbaab);
+        background: linear-gradient(to bottom, #ffffff, #abbaab);
+        border: 2px double #010846;
+    }
