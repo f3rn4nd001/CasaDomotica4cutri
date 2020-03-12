@@ -1,7 +1,9 @@
+const Sensores = require('./model/Sensores');
 const http = require('http');
 const express = require('express');
 const SocketIO = require('socket.io');
 const path = require('path');
+const monsgoose = require('mongoose');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const hbs = require('hbs');
@@ -34,10 +36,13 @@ parser.on('open', function() {
     console.log('connection is opened');
 });
 
-parser.on('data', function(data) {
+parser.on('data', async(data) => {
     let temp = parseInt(data, 10) + " °C";
-    console.log(temp);
+    //console.log(temp);
     io.emit('temp', data.toString());
+    const sensorNuevo = new Sensores({ data });
+    console.log(sensorNuevo);
+    await sensorNuevo.save();
 });
 
 io.on('connection', (socket) => {

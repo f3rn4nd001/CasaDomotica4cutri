@@ -7,7 +7,10 @@ DatosSensores.getMTDatos = async(req, res) => {
 
     const flama = await Sensores.find().sort({ fecha: 'desc' }).where('nombre').equals('Flama');
 
-    const sensores = await Sensores.find().sort({ nombre: 'desc' });
+    const sensores = await Sensores.find({ data: 'Apartado' });
+    console.log(sensores);
+
+
     res.render('principal/index', { sensores, flama });
     console.log(flama);
 
