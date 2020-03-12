@@ -40,7 +40,8 @@ parser.on('data', async(data) => {
     let temp = parseInt(data, 10) + " °C";
     //console.log(temp);
     io.emit('temp', data.toString());
-    const sensorNuevo = new Sensores({ data });
+    const dataa = JSON.parse(data.toString());
+    const sensorNuevo = new Sensores({ dataa });
     console.log(sensorNuevo);
     await sensorNuevo.save();
 });
