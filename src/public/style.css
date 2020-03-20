@@ -92,28 +92,28 @@
     }
     
     .card1 {
-        background-image: url(./imagenes/Fernando.PNG);
+        background-image: url(./imagenes/Captura.PNG);
         background-size: cover;
         border-radius: 200px;
         border: 1px double #010846;
     }
     
     .card2 {
-        background-image: url(https://cnnespanol2.files.wordpress.com/2019/12/s_64a163f16ecbb099e52f2f8271f73cbbfcfc9034be4d646f7375e4db1ca6f3d7_1573501883482_ap_19001106049831-1.jpg?quality=100&strip=info&w=940&h=530&crop=1);
+        background-image: url(./imagenes/dariana.jpg);
         background-size: cover;
         border-radius: 200px;
         border: 1px double #010846;
     }
     
     .card3 {
-        background-image: url(https://cnnespanol2.files.wordpress.com/2019/12/s_64a163f16ecbb099e52f2f8271f73cbbfcfc9034be4d646f7375e4db1ca6f3d7_1573501883482_ap_19001106049831-1.jpg?quality=100&strip=info&w=940&h=530&crop=1);
+        background-image: url(./imagenes/jaime1.jpg);
         background-size: cover;
         border-radius: 200px;
         border: 1px double #010846;
     }
     
     .card4 {
-        background-image: url(https://cnnespanol2.files.wordpress.com/2019/12/s_64a163f16ecbb099e52f2f8271f73cbbfcfc9034be4d646f7375e4db1ca6f3d7_1573501883482_ap_19001106049831-1.jpg?quality=100&strip=info&w=940&h=530&crop=1);
+        background-image: url(./imagenes/arrona.PNG);
         background-size: cover;
         border-radius: 200px;
         border: 1px double #010846;
@@ -211,6 +211,7 @@
     
     .static {
         background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/bryce-canyon-utah.jpg');
+     
     }
     /* Sets the actual background images to adorable kitties. This part is crucial. */
     
