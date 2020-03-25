@@ -211,12 +211,15 @@
     
     .static {
         background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/bryce-canyon-utah.jpg');
-     
     }
     /* Sets the actual background images to adorable kitties. This part is crucial. */
     
     .bg1::after {
         background-image: url('https://static-mx.lamudi.com/static/media/cXVhbGl0eS83MA%3D%3D/2x2x2x700x340/eb473b10d2be80.jpg');
+        background-color: RGB(128, 128, 128);
+        background-blend-mode: soft-light;
+        background-size: cover;
+        background-position: center;
     }
     
     .bg2::after {
